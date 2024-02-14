@@ -1,0 +1,10 @@
+vhdtdtfi -lib work H:/verilog/counting/counting.v -lang verilog -prj counting -o counting.spl -module counting -template H:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan3 counting.spl H:/verilog/counting/counting.sym 
+xst -intstyle ise -ifn "H:/verilog/counting/counting.xst" -ofn "H:/verilog/counting/counting.syr" 
+xst -intstyle ise -ifn "H:/verilog/counting/counting.xst" -ofn "H:/verilog/counting/counting.syr" 
+xst -intstyle ise -ifn "H:/verilog/counting/counting.xst" -ofn "H:/verilog/counting/counting.syr" 
+xst -intstyle ise -ifn "H:/verilog/counting/counting.xst" -ofn "H:/verilog/counting/counting.syr" 
+xst -intstyle ise -ifn "H:/verilog/counting/counting.xst" -ofn "H:/verilog/counting/counting.syr" 
+xst -intstyle ise -ifn "H:/verilog/counting/counting.xst" -ofn "H:/verilog/counting/counting.syr" 
+vhdtdtfi -lib work H:/verilog/counting/counting.v -lang verilog -prj counting -o counting.spl -module counting -template H:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan3 counting.spl H:/verilog/counting/counting.sym 

@@ -1,0 +1,5 @@
+set -tmpdir "H:/verilog/counting/xst/projnav.tmp"
+set -xsthdpdir "H:/verilog/counting/xst"
+elaborate
+-ifn .prj
+-ifmt mixed

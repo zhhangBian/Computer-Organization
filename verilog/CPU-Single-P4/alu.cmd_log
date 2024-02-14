@@ -1,0 +1,3 @@
+vhdtdtfi -lang verilog -prj CPU-Single -o H:/BUAA_workshop/verilog/CPU-Single/alu.tfi -lib work H:/BUAA_workshop/verilog/CPU-Single//alu.v -module alu -template H:/ISE/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work H:/BUAA_workshop/verilog/CPU-Single/alu.v -lang verilog -prj CPU-Single -o alu.spl -module alu -template H:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan3 alu.spl H:/BUAA_workshop/verilog/CPU-Single/alu.sym 

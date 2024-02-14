@@ -1,0 +1,354 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ctrl.v" in library work
+Compiling verilog file "Wreg.v" in library work
+Module <ctrl> compiled
+Compiling verilog file "SU.v" in library work
+Module <Wreg> compiled
+Compiling verilog file "NPC.v" in library work
+Module <SU> compiled
+Compiling verilog file "Mreg.v" in library work
+Module <NPC> compiled
+Compiling verilog file "IFU.v" in library work
+Module <Mreg> compiled
+Compiling verilog file "GRF.v" in library work
+Module <IFU> compiled
+Compiling verilog file "Ereg.v" in library work
+Module <GRF> compiled
+Compiling verilog file "Dreg.v" in library work
+Module <Ereg> compiled
+Compiling verilog file "DM.v" in library work
+Module <Dreg> compiled
+Compiling verilog file "BC.v" in library work
+Module <DM> compiled
+Compiling verilog file "ALU.v" in library work
+Module <BC> compiled
+Compiling verilog file "mips.v" in library work
+Module <ALU> compiled
+Module <mips> compiled
+No errors in compilation
+Analysis of file <"mips.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mips> in library <work>.
+
+Analyzing hierarchy for module <SU> in library <work>.
+
+Analyzing hierarchy for module <IFU> in library <work>.
+
+Analyzing hierarchy for module <Dreg> in library <work>.
+
+Analyzing hierarchy for module <ctrl> in library <work>.
+
+Analyzing hierarchy for module <GRF> in library <work>.
+
+Analyzing hierarchy for module <NPC> in library <work>.
+
+Analyzing hierarchy for module <BC> in library <work>.
+
+Analyzing hierarchy for module <Ereg> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work>.
+
+Analyzing hierarchy for module <Mreg> in library <work>.
+
+Analyzing hierarchy for module <DM> in library <work>.
+
+Analyzing hierarchy for module <Wreg> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mips>.
+Module <mips> is correct for synthesis.
+ 
+Analyzing module <SU> in library <work>.
+Module <SU> is correct for synthesis.
+ 
+Analyzing module <IFU> in library <work>.
+WARNING:Xst:863 - "IFU.v" line 9: Name conflict (<PC> and <pc>, renaming PC as pc_rnm0).
+INFO:Xst:2546 - "IFU.v" line 19: reading initialization file "code.txt".
+WARNING:Xst:2319 - "IFU.v" line 19: Signal ROM in initial block is partially initialized. The initialization will be ignored.
+INFO:Xst:1433 - Contents of array <ROM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <IFU> is correct for synthesis.
+ 
+Analyzing module <Dreg> in library <work>.
+Module <Dreg> is correct for synthesis.
+ 
+Analyzing module <ctrl> in library <work>.
+Module <ctrl> is correct for synthesis.
+ 
+Analyzing module <GRF> in library <work>.
+WARNING:Xst:2321 - "GRF.v" line 32: Parameter 2 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "GRF.v" line 32: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "GRF.v" line 32: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "GRF.v" line 32: Parameter 5 is not constant in call of system task $display.
+"GRF.v" line 32: $display : %h: $%d <= %h
+Module <GRF> is correct for synthesis.
+ 
+Analyzing module <NPC> in library <work>.
+Module <NPC> is correct for synthesis.
+ 
+Analyzing module <BC> in library <work>.
+Module <BC> is correct for synthesis.
+ 
+Analyzing module <Ereg> in library <work>.
+Module <Ereg> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <Mreg> in library <work>.
+Module <Mreg> is correct for synthesis.
+ 
+Analyzing module <DM> in library <work>.
+WARNING:Xst:863 - "DM.v" line 4: Name conflict (<address> and <Address>, renaming address as address_rnm0).
+WARNING:Xst:2321 - "DM.v" line 45: Parameter 2 ($time) is not supported in call of system task $display.
+WARNING:Xst:2323 - "DM.v" line 45: Parameter 3 is not constant in call of system task $display.
+WARNING:Xst:2323 - "DM.v" line 45: Parameter 4 is not constant in call of system task $display.
+WARNING:Xst:2323 - "DM.v" line 45: Parameter 5 is not constant in call of system task $display.
+"DM.v" line 45: $display : %h: *%h <= %h
+INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <DM> is correct for synthesis.
+ 
+Analyzing module <Wreg> in library <work>.
+Module <Wreg> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <regOut2_out> in unit <Ereg> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <i> in unit <DM> has a constant value of 10000000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <IFU>.
+    Related source file is "IFU.v".
+WARNING:Xst:653 - Signal <ROM> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+    Found 32-bit adder for signal <pc>.
+    Found 32-bit register for signal <pc_rnm0>.
+    Found 32-bit subtractor for signal <pc_rnm0$sub0000> created at line 32.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <IFU> synthesized.
+
+
+Synthesizing Unit <Dreg>.
+    Related source file is "Dreg.v".
+    Found 32-bit register for signal <PC_out>.
+    Found 32-bit register for signal <inStr_out>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <Dreg> synthesized.
+
+
+Synthesizing Unit <ctrl>.
+    Related source file is "ctrl.v".
+WARNING:Xst:647 - Input <inStr<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <_bltz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <_blez> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <_bgtz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <_bgez> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ctrl> synthesized.
+
+
+Synthesizing Unit <GRF>.
+    Related source file is "GRF.v".
+WARNING:Xst:647 - Input <PC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 18.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0001> created at line 19.
+    Found 1024-bit register for signal <grf>.
+    Found 5-bit comparator equal for signal <RD1$cmp_eq0000> created at line 18.
+    Found 5-bit comparator equal for signal <RD2$cmp_eq0000> created at line 19.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <grf>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  96 Multiplexer(s).
+Unit <GRF> synthesized.
+
+
+Synthesizing Unit <NPC>.
+    Related source file is "NPC.v".
+    Found 32-bit adder for signal <PCadd4>.
+    Found 32-bit 4-to-1 multiplexer for signal <PCnext>.
+    Found 32-bit adder for signal <PC_branch>.
+    Found 32-bit adder for signal <PC_branch$addsub0000> created at line 17.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <NPC> synthesized.
+
+
+Synthesizing Unit <BC>.
+    Related source file is "BC.v".
+    Found 32-bit comparator equal for signal <if_branch$cmp_eq0000> created at line 18.
+    Found 33-bit comparator greatequal for signal <if_branch$cmp_ge0000> created at line 18.
+    Found 33-bit comparator greater for signal <if_branch$cmp_gt0000> created at line 18.
+    Found 33-bit comparator lessequal for signal <if_branch$cmp_le0000> created at line 18.
+    Found 33-bit comparator less for signal <if_branch$cmp_lt0000> created at line 18.
+    Found 32-bit comparator not equal for signal <if_branch$cmp_ne0000> created at line 18.
+    Summary:
+	inferred   6 Comparator(s).
+Unit <BC> synthesized.
+
+
+Synthesizing Unit <Ereg>.
+    Related source file is "Ereg.v".
+WARNING:Xst:647 - Input <regOut1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <extend_out>.
+    Found 32-bit register for signal <PC_out>.
+    Found 32-bit register for signal <inStr_out>.
+    Found 32-bit register for signal <regOut1_out>.
+    Found 5-bit register for signal <shift_out>.
+    Summary:
+	inferred 133 D-type flip-flop(s).
+Unit <Ereg> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "ALU.v".
+    Found 32-bit addsub for signal <result$addsub0000>.
+    Found 32-bit comparator greater for signal <result$cmp_gt0000> created at line 12.
+    Found 32-bit comparator less for signal <result$cmp_lt0000> created at line 12.
+    Found 32-bit shifter logical left for signal <result$shift0000> created at line 12.
+    Found 32-bit shifter logical right for signal <result$shift0001> created at line 12.
+    Found 32-bit shifter arithmetic right for signal <result$shift0002> created at line 12.
+    Found 32-bit xor2 for signal <result$xor0000> created at line 12.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <Mreg>.
+    Related source file is "Mreg.v".
+    Found 32-bit register for signal <regOut2_out>.
+    Found 32-bit register for signal <aluResult_out>.
+    Found 32-bit register for signal <PC_out>.
+    Found 32-bit register for signal <inStr_out>.
+    Found 32-bit register for signal <regOut1_out>.
+    Summary:
+	inferred 160 D-type flip-flop(s).
+Unit <Mreg> synthesized.
+
+
+Synthesizing Unit <DM>.
+    Related source file is "DM.v".
+WARNING:Xst:647 - Input <Address<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PC> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <rdTmp2<31:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rdTmp1<31:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <address_rnm0<13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.

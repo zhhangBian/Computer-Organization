@@ -1,0 +1,52 @@
+Running: H:\ISE\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o H:/BUAA_workshop/verilog/CPU-pipline-P6/mips_txt_isim_beh.exe -prj H:/BUAA_workshop/verilog/CPU-pipline-P6/mips_txt_beh.prj work.mips_txt work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 16
+Turning on mult-threading, number of parallel sub-compilation jobs: 32 
+Determining compilation order of HDL files
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/ctrl.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/Wreg.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/SU.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/NPC.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/Mreg.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/IFU.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/HLU.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/GRF.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/Ereg.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/Dreg.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/DM.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/BC.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/ALU.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips.v" into library work
+Analyzing Verilog file "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips_tb.v" into library work
+Analyzing Verilog file "H:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips.v" Line 175: Port clear is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips.v" Line 189: Port regWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips.v" Line 268: Port regWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips.v" Line 352: Port regWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/mips.v" Line 426: Port regDst is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/SU.v" Line 19: Port regWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/SU.v" Line 55: Port regWrite is not connected to this instance
+WARNING:HDLCompiler:1016 - "H:/BUAA_workshop/verilog/CPU-pipline-P6/SU.v" Line 84: Port regWrite is not connected to this instance
+Completed static elaboration
+Compiling module ctrl
+Compiling module SU
+Compiling module IFU
+Compiling module Dreg
+Compiling module GRF
+Compiling module NPC
+Compiling module BC
+Compiling module Ereg
+Compiling module ALU
+Compiling module HLU
+Compiling module Mreg
+Compiling module DM
+Compiling module Wreg
+Compiling module mips
+Compiling module mips_txt
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 16 Verilog Units
+Built simulation executable H:/BUAA_workshop/verilog/CPU-pipline-P6/mips_txt_isim_beh.exe
+Fuse Memory Usage: 37304 KB
+Fuse CPU Usage: 890 ms

@@ -1,0 +1,25 @@
+ISim log file
+Running: H:\BUAA_workshop\verilog\CPU-pipline-P6\mips_txt_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb H:/BUAA_workshop/verilog/CPU-pipline-P6/mips_txt_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  38@00003000: $ 1 <= ffff0000
+                  42@00003004: $ 1 <= fffffff6
+                  46@00003008: $ 1 <= fffffff6
+                  62@00003014: $ 2 <= 00000001
+                  66@00003018: $ 2 <= 00000002
+                  70@0000301c: $ 1 <= ffff0000
+                  74@00003020: $ 1 <= fffffff6
+                  78@00003024: $ 3 <= fffffff6
+                  94@00003034: $ 3 <= fffffff7
+                 110@00003040: $ 2 <= 00000003

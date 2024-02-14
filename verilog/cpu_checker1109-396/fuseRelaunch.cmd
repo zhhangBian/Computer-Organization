@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/verilog/cpu_checker1109-396/cpu_checker_tb_isim_beh.exe" -prj "H:/verilog/cpu_checker1109-396/cpu_checker_tb_beh.prj" "work.cpu_checker_tb" "work.glbl" 

@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+path instance_name (
+    .clk(clk), 
+    .reset(reset)
+    );
+
+

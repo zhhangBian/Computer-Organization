@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "H:/verilog/intcheck-1109-336/intcheck.xst" -ofn "H:/verilog/intcheck-1109-336/intcheck.syr" 
+xst -intstyle ise -ifn "H:/verilog/intcheck-1109-336/intcheck.xst" -ofn "H:/verilog/intcheck-1109-336/intcheck.syr" 
+xst -intstyle ise -ifn "H:/verilog/intcheck-1109-336/intcheck.xst" -ofn "H:/verilog/intcheck-1109-336/intcheck.syr" 
+xst -intstyle ise -ifn "H:/verilog/intcheck-1109-336/intcheck.xst" -ofn "H:/verilog/intcheck-1109-336/intcheck.syr" 
+xst -intstyle ise -ifn "H:/verilog/intcheck-1109-336/intcheck.xst" -ofn "H:/verilog/intcheck-1109-336/intcheck.syr" 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/BUAA_workshop/verilog/BlockChecker-1120-406/BlockChecker_tb_isim_beh.exe" -prj "H:/BUAA_workshop/verilog/BlockChecker-1120-406/BlockChecker_tb_beh.prj" "work.BlockChecker_tb" "work.glbl" 

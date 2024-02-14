@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/CPU-Single/path.xst" -ofn "H:/BUAA_workshop/verilog/CPU-Single/path.syr" 
+vhdtdtfi -lib work H:/BUAA_workshop/verilog/CPU-Single/path.v -lang verilog -prj CPU-Single -o path.spl -module path -template H:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan3 path.spl H:/BUAA_workshop/verilog/CPU-Single/path.sym 
+vhdtdtfi -lang verilog -prj CPU-Single -o H:/BUAA_workshop/verilog/CPU-Single/path.tfi -lib work H:/BUAA_workshop/verilog/CPU-Single//path.v -module path -template H:/ISE/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

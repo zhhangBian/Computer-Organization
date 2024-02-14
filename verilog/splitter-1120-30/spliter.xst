@@ -1,0 +1,5 @@
+set -tmpdir "H:/BUAA_workshop/verilog/spliter-1120-30/xst/projnav.tmp"
+set -xsthdpdir "H:/BUAA_workshop/verilog/spliter-1120-30/xst"
+elaborate
+-ifn spliter.prj
+-ifmt mixed
