@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/strfsm-1120-24/expr.xst" -ofn "H:/BUAA_workshop/verilog/strfsm-1120-24/expr.syr" 

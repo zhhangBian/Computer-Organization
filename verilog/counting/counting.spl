@@ -1,9 +1,0 @@
-[Inputs]
-clk
-=num[1:0]=
-[Outputs]
-ans
-[BiDir]
-[ATTRIBUTES]
-VeriModel counting
-

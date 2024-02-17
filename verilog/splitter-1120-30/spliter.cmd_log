@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/spliter/spliter.xst" -ofn "H:/BUAA_workshop/verilog/spliter/spliter.syr" 
-xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/spliter-1120-30/spliter.xst" -ofn "H:/BUAA_workshop/verilog/spliter-1120-30/spliter.syr" 
-xst -intstyle ise -ifn "H:/BUAA_workshop/verilog/spliter-1120-30/spliter.xst" -ofn "H:/BUAA_workshop/verilog/spliter-1120-30/spliter.syr" 

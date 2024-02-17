@@ -1,5 +1,0 @@
-set -tmpdir "H:/BUAA_workshop/verilog/CPU-pipline/xst/projnav.tmp"
-set -xsthdpdir "H:/BUAA_workshop/verilog/CPU-pipline/xst"
-elaborate
--ifn mips.prj
--ifmt mixed

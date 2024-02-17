@@ -1,5 +1,0 @@
-set -tmpdir "H:/BUAA_workshop/verilog/CPU-Single/xst/projnav.tmp"
-set -xsthdpdir "H:/BUAA_workshop/verilog/CPU-Single/xst"
-elaborate
--ifn GRF.prj
--ifmt mixed
